@@ -51,8 +51,6 @@ public class SaludoServlet3 extends HttpServlet {
                 out.println("<br>");
             }
             out.println("<br>");
-            out.println("</body>");
-            out.println("</html>");
             Calendar fechahora = new GregorianCalendar();
             Random rnd = new Random();
             int tamreloj = rnd.nextInt(7) + 1;
