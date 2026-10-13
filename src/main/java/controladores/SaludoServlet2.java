@@ -1,6 +1,6 @@
 /**
  * @author Prof Matias Garcia.
- * <p> Copyright (C) 2022 para <a href = "https://www.profmatiasgarcia.com.ar/"> www.profmatiasgarcia.com.ar </a>
+ * <p> Copyright (C) 2026 para <a href = "https://www.profmatiasgarcia.com.ar/"> www.profmatiasgarcia.com.ar </a>
  * - con licencia GNU GPL3.
  * <p> Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los términos de la
  * Licencia Pública General de GNU según es publicada por la Free Software Foundation, 
@@ -16,11 +16,15 @@ package controladores;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.Calendar;
+import java.util.Enumeration;
 import java.util.GregorianCalendar;
+
+@WebServlet(urlPatterns = {"/info", "/infoHeaders", "/params"})
 
 public class SaludoServlet2 extends HttpServlet {
 
@@ -61,6 +65,27 @@ public class SaludoServlet2 extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+//        response.setContentType("text/html;charset=UTF-8");
+//        try (PrintWriter out = response.getWriter()) {
+//            out.print("<html><head>");
+//            out.print("<title>Viendo una petición HTTP</title>");
+//            out.print("</head><body>");
+//            
+//            Enumeration<String> nombresHeaders = request.getHeaderNames();
+//            out.print("<h1>Headers recibidos</h1>");
+//            while (nombresHeaders.hasMoreElements()) {
+//                String nH = nombresHeaders.nextElement();
+//                out.println("<p><strong>" + nH + "</strong>: " + request.getHeader(nH) + "</p>");
+//            }
+//
+//            Enumeration<String> nombresParams = request.getParameterNames();
+//            out.print("<h1>Parámetros recibidos</h1>");
+//            while (nombresParams.hasMoreElements()) {
+//                String nP = nombresParams.nextElement();
+//                out.println("<p><strong>" + nP + "</strong>: " + request.getParameter(nP) + "</p>");
+//            }
+//            out.print("</body></html>");
+//        }
     }
 
     /**

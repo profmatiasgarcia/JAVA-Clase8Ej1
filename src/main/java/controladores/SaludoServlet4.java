@@ -1,6 +1,6 @@
 /**
  * @author Prof Matias Garcia.
- * <p> Copyright (C) 2022 para <a href = "https://www.profmatiasgarcia.com.ar/"> www.profmatiasgarcia.com.ar </a>
+ * <p> Copyright (C) 2026 para <a href = "https://www.profmatiasgarcia.com.ar/"> www.profmatiasgarcia.com.ar </a>
  * - con licencia GNU GPL3.
  * <p> Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los términos de la
  * Licencia Pública General de GNU según es publicada por la Free Software Foundation, 
@@ -16,10 +16,12 @@ package controladores;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+@WebServlet(value = "/SaludoServlet4")
 public class SaludoServlet4 extends HttpServlet {
 
     /**

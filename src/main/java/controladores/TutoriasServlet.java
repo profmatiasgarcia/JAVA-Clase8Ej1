@@ -1,6 +1,6 @@
 /**
  * @author Prof Matias Garcia.
- * <p> Copyright (C) 2022 para <a href = "https://www.profmatiasgarcia.com.ar/"> www.profmatiasgarcia.com.ar </a>
+ * <p> Copyright (C) 2026 para <a href = "https://www.profmatiasgarcia.com.ar/"> www.profmatiasgarcia.com.ar </a>
  * - con licencia GNU GPL3.
  * <p> Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los términos de la
  * Licencia Pública General de GNU según es publicada por la Free Software Foundation, 
